@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+  text-align: center;
+}
+
+/* Logo de Facebook */
+.logo {
+  width: 240px;
+  margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+/* Estilos para los inputs */
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.form-container input:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+/* Estilos para el botón de inicio de sesión */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #166fe5;
+}
+
+/* Estilos para el enlace "¿Olvidaste tu contraseña?" */
+.form-container a {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+/* Divisor entre el botón de inicio de sesión y el de crear cuenta */
+.divider {
+  border-top: 1px solid #dddfe2;
+  margin: 20px 0;
+}
+
+/* Estilos para el botón "Crear cuenta nueva" */
+.create-account {
+  background-color: #42b72a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.create-account:hover {
+  background-color: #36a420;
+}
