@@ -1,0 +1,279 @@
+/* Estilos Generales */
+body {
+    background-color: #fff8e1;  /* Amarillo claro apagado */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background-color: #fff;  /* Blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos de Tablas */
+.table th { 
+    background-color: #ffd700;  /* Amarillo dorado */
+    color: #333;
+    white-space: nowrap;
+    padding: 12px 15px;
+}
+
+.table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff8e1;  /* Amarillo claro apagado */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #fff;  /* Blanco */
+}
+
+/* Estilos para la tabla de pedidos */
+.table-responsive {
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Estilos para las columnas específicas */
+.table td:nth-child(1) { /* Fecha */
+    width: 150px;
+    white-space: nowrap;
+}
+
+.table td:nth-child(2) { /* Cliente */
+    min-width: 150px;
+}
+
+.table td:nth-child(3) { /* Teléfono */
+    width: 120px;
+}
+
+.table td:nth-child(4) { /* Dirección */
+    min-width: 150px;
+}
+
+.table td:nth-child(5) { /* Empanadas */
+    min-width: 300px;
+    max-width: 400px;
+    word-wrap: break-word;
+}
+
+.table td:nth-child(6) { /* Total */
+    width: 120px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.table td:nth-child(7) { /* Acciones */
+    width: 150px;
+    text-align: center;
+}
+
+/* Estilos de Botones */
+.btn-group { 
+    gap: 5px; 
+}
+
+.btn-primary {
+    background-color: #ffd700;  /* Amarillo dorado */
+    border-color: #ffd700;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #ffc107;  /* Amarillo más oscuro */
+    border-color: #ffc107;
+    color: #333;
+}
+
+.btn-success {
+    background-color: #ffd700;  /* Amarillo dorado */
+    border-color: #ffd700;
+    color: #333;
+}
+
+.btn-success:hover {
+    background-color: #ffc107;  /* Amarillo más oscuro */
+    border-color: #ffc107;
+    color: #333;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-primary {
+    color: #ffd700;  /* Amarillo dorado */
+    border-color: #ffd700;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ffd700;  /* Amarillo dorado */
+    border-color: #ffd700;
+    color: #333;
+}
+
+/* Estilos de Alertas */
+.alert-success {
+    background-color: #fff8e1;  /* Amarillo claro apagado */
+    border-color: #ffd700;  /* Amarillo dorado */
+    color: #333;
+}
+
+.alert-danger {
+    background-color: #fff8e1;  /* Amarillo claro apagado */
+    border-color: #ffd700;  /* Amarillo dorado */
+    color: #333;
+}
+
+.alert-info {
+    background-color: #fff8e1;  /* Amarillo claro apagado */
+    border-color: #ffd700;  /* Amarillo dorado */
+    color: #333;
+}
+
+/* Estilos de Modales */
+.modal-content {
+    background-color: #fff;  /* Blanco */
+}
+
+.modal-header {
+    background-color: #ffd700;  /* Amarillo dorado */
+    color: #333;
+}
+
+/* Estilos de Formularios */
+.form-control:focus {
+    border-color: #ffd700;  /* Amarillo dorado */
+    box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25);
+}
+
+/* Estilos de Estados */
+.estado-pendiente { color: #dc3545; }
+.estado-en_proceso { color: #ffc107; }
+.estado-entregado { color: #ffd700; }
+.estado-cancelado { color: #6c757d; }
+
+/* Estilos de la Tienda */
+.producto-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.producto-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.producto-card .descripcion {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.producto-card .precio {
+    color: #666666;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.producto-card .btn-comprar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.producto-titulo {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.producto-precio {
+    color: #ffd700;  /* Amarillo dorado */
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Estilos del Carrito */
+.carrito-item {
+    background-color: #fff;  /* Blanco */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.carrito-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Estilos del Formulario de Pedido */
+.formulario-pedido {
+    background-color: #fff;  /* Blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .producto-card {
+        margin-bottom: 15px;
+    }
+    
+    .table td, .table th {
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .table td:nth-child(5) { /* Empanadas */
+        min-width: 200px;
+        max-width: 300px;
+    }
+} 
